@@ -1,0 +1,62 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="vignette" cx="50%" cy="45%" r="75%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.85"/>
+    </radialGradient>
+    <linearGradient id="textGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#b8b8b8"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.4" fill="#ffffff" opacity="0.55"/>
+    </pattern>
+    <style>
+      .dot { fill: #ffffff; }
+      .flicker { animation: pulse 4s ease-in-out infinite; }
+      @keyframes pulse {
+        0%   { opacity: 0.15; }
+        50%  { opacity: 0.9; }
+        100% { opacity: 0.15; }
+      }
+      .title {
+        font-family: 'Courier New', monospace;
+        font-weight: 700;
+        letter-spacing: 6px;
+      }
+      .subtitle {
+        font-family: 'Courier New', monospace;
+        letter-spacing: 3px;
+      }
+      .cursor {
+        animation: blink 1s step-end infinite;
+      }
+      @keyframes blink { 50% { opacity: 0; } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="300" fill="#000000"/>
+  <rect width="1200" height="300" fill="url(#dots)"/>
+
+  <!-- scattered flickering dots, echoing the shader's random opacity per-cell animation -->
+  <g class="dot">
+    <circle class="flicker" cx="120" cy="60" r="2" style="animation-delay:0s"/>
+    <circle class="flicker" cx="220" cy="140" r="2" style="animation-delay:0.6s"/>
+    <circle class="flicker" cx="340" cy="80" r="2" style="animation-delay:1.2s"/>
+    <circle class="flicker" cx="80" cy="220" r="2" style="animation-delay:0.3s"/>
+    <circle class="flicker" cx="980" cy="60" r="2" style="animation-delay:0.9s"/>
+    <circle class="flicker" cx="1080" cy="150" r="2" style="animation-delay:1.5s"/>
+    <circle class="flicker" cx="1140" cy="230" r="2" style="animation-delay:0.2s"/>
+    <circle class="flicker" cx="900" cy="240" r="2" style="animation-delay:1.8s"/>
+    <circle class="flicker" cx="60" cy="120" r="2" style="animation-delay:2.1s"/>
+    <circle class="flicker" cx="1100" cy="40" r="2" style="animation-delay:2.4s"/>
+    <circle class="flicker" cx="500" cy="30" r="2" style="animation-delay:1.1s"/>
+    <circle class="flicker" cx="700" cy="270" r="2" style="animation-delay:0.5s"/>
+  </g>
+
+  <rect width="1200" height="300" fill="url(#vignette)"/>
+
+  <text x="600" y="150" text-anchor="middle" class="title" font-size="46" fill="url(#textGlow)">PRAKHAR</text>
+  <text x="600" y="185" text-anchor="middle" class="subtitle" font-size="16" fill="#999999">AI / ML ENGINEER IN TRAINING<tspan class="cursor">_</tspan></text>
+</svg>
