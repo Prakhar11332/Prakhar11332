@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Prakhar11332/Prakhar11332/main/assets/banner.svg" width="100%" alt="banner"/>
+<img src="https://raw.githubusercontent.com/Prakhar11332/Prakhar11332/main/banner.svg" width="100%" alt="banner"/>
 
 <br/>
 
@@ -208,12 +208,8 @@ prakhar@dev:~$ git log --stat --since="1 year ago"
 
 </div>
 
-<div align="center">
-<sub>Semester 5 · targeting a 9.5 SGPA · targeting May 2027 for an AI/ML engineering internship</sub>
-</div>
 
-<br/>
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/Prakhar11332/Prakhar11332/main/assets/banner.svg" width="100%" alt="footer"/>
+<img src="https://raw.githubusercontent.com/Prakhar11332/Prakhar11332/main/banner.svg" width="100%" alt="footer"/>
 </div>
