@@ -161,17 +161,11 @@ No unexplained code makes it into a commit — every project I ship has document
 
 <div align="center">
 
-<a href="mailto:your-email@example.com"><img src="https://img.shields.io/badge/Email-000000?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-<a href="https://linkedin.com/in/your-linkedin"><img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="prakharg2412@gmail.com"><img src="https://img.shields.io/badge/Email-000000?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="https://www.linkedin.com/in/prakhar-goyal-0348a9323/"><img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <a href="https://github.com/Prakhar11332"><img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" /></a>
 
-</div>
 
-<div align="center">
-<sub>Semester 5 · targeting a 9.5 SGPA · targeting May 2027 for an AI/ML engineering internship</sub>
-</div>
-
-<br/>
 
 <div align="center">
 <img src="./assets/banner.svg" width="100%" alt="footer"/>
