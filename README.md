@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Prakhar11332/Prakhar11332/main/banner.svg" width="100%" alt="banner"/>
+<img src="https://raw.githubusercontent.com/Prakhar11332/Prakhar11332/main/assets/banner.svg" width="100%" alt="banner"/>
 
 <br/>
 
@@ -23,111 +23,141 @@ $ status
 $ current_focus
 > [x] Full-stack AI systems (Next.js + FastAPI + Postgres/pgvector)
 > [x] Agentic workflows & MCP servers
-> [x] Concurrency-safe backend engineering
 > [ ] Internship — AI/ML Engineering, May 2027
 ```
 
 <br/>
 
+## ⌁ stack
+
+```
+prakhar@dev:~/stack$ cat languages.txt
+```
+<p>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+<img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white"/>
+<img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white"/>
+</p>
+
+```
+prakhar@dev:~/stack$ ./init_ai_models.sh --start
+```
+<p>
+<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white"/>
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"/>
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
+<img src="https://img.shields.io/badge/SHAP-8A2BE2?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white"/>
+</p>
+
+```
+prakhar@dev:~/stack$ cat agentic_and_llm.txt
+```
+<p>
+<img src="https://img.shields.io/badge/Claude_API-D97757?style=for-the-badge&logo=anthropic&logoColor=white"/>
+<img src="https://img.shields.io/badge/MCP-6E56CF?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/RAG-1E88E5?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Voyage_AI-00B894?style=for-the-badge"/>
+</p>
+
+```
+prakhar@dev:~/stack$ cat backend_and_data.txt
+```
+<p>
+<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
+<img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"/>
+<img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white"/>
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
+<img src="https://img.shields.io/badge/pgvector-336791?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+<img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white"/>
+</p>
+
+```
+prakhar@dev:~/stack$ ./deploy.sh --target=infra --env=production
+```
+<p>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white"/>
+<img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white"/>
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+</p>
+
+```
+prakhar@dev:~/stack$ cat frontend.txt
+```
+<p>
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"/>
+<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white"/>
+<img src="https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=threedotjs&logoColor=white"/>
+<img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white"/>
+<img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white"/>
+</p>
+
+<br/>
+
 ## ⌁ what I'm building
 
-Everything below started as a coursework requirement and turned into something I actually wanted to ship well.
+```
+prakhar@dev:~/projects$ ls --featured
+```
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
 ### 🛫 Runway
-**AI-powered productivity system, aviation metaphor**
+AI-powered productivity system with an aviation metaphor — Next.js 14, PostgreSQL/Prisma, RAG over your own task history via pgvector + Voyage embeddings, mood-aware prioritization, and an MCP-based autopilot loop.
 
-A task manager rebuilt from a hackathon prototype into a real portfolio piece — Next.js 14 + TypeScript, PostgreSQL/Prisma, RAG over your own task history via pgvector + Voyage embeddings, mood-aware prioritization, and an MCP-based autopilot loop that can act on your tasks agentically.
-
-`Next.js` `TypeScript` `Prisma` `pgvector` `MCP` `R3F`
+**[→ github.com/Prakhar11332/runway](https://github.com/Prakhar11332/runway)**
 
 </td>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
-### 🗄️ Autonomous DBaaS for Universities
-**Self-service Database-as-a-Service platform**
+### 🗄️ Autonomous DBaaS
+Self-service Database-as-a-Service platform — multi-tenant PostgreSQL/MySQL/MariaDB provisioning on Docker/Kubernetes, driven by six control-plane engines, with a React dashboard.
 
-Multi-tenant PostgreSQL/MySQL/MariaDB provisioning on Docker/Kubernetes, driven by six control-plane engines — Provisioning, Backup, Monitoring, Recovery, User Management, Resource Scheduler — with a React dashboard on top.
+**[→ github.com/Prakhar11332/autonomous](https://github.com/Prakhar11332/autonomous)**
 
-`Docker` `Kubernetes` `PostgreSQL` `React` `Systems Design`
+</td>
+<td width="33%" valign="top">
+
+### 🎬 CinegineAI
+An AI-driven engine for the film/media pipeline — built to explore applied ML and generative workflows end to end.
+
+**[→ github.com/Prakhar11332/cinegine-ai](https://github.com/Prakhar11332/cinegine-ai)**
 
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
-### 🔒 TxnGuard
-**Concurrency-safe booking engine**
+### 📊 Student Performance Intelligence
+UCI dataset-driven system predicting and explaining student outcomes — Random Forest + SHAP, PostgreSQL, FastAPI backend, Streamlit dashboard.
 
-A deep dive into what actually happens under load: TOCTOU races, `SELECT FOR UPDATE` row-locking, wound-wait deadlock prevention, and the tradeoffs between pessimistic and optimistic concurrency control — all built on PostgreSQL + FastAPI.
-
-`PostgreSQL` `FastAPI` `Concurrency` `Systems`
+**[→ github.com/Prakhar11332/student-performance](https://github.com/Prakhar11332/student-performance)**
 
 </td>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
 ### 🚑 TriageAI
-**Offline-first mass-casualty triage assistant**
+Offline-first mass-casualty triage assistant — local Gemma model via Ollama, FastAPI + WebSockets, React/Vite, SQLite, live Leaflet map. Runs entirely off a laptop-as-hotspot, no internet required.
 
-Runs fully offline on a local Gemma model via Ollama — FastAPI + WebSockets backend, React/Vite frontend, SQLite, live Leaflet map — served from a laptop acting as its own hotspot so paramedics can triage from their phones with zero internet.
-
-`Ollama` `FastAPI` `WebSockets` `React` `Leaflet`
+**[→ github.com/Prakhar11332/triageai-1](https://github.com/Prakhar11332/triageai-1)**
 
 </td>
-</tr>
-</table>
+<td width="33%" valign="top">
 
-<div align="center">
-<sub>+ a Random-Forest heart-disease predictor with SHAP explainability, deployed and live on Render</sub>
-</div>
+### 📍 Campus Study Spot Finder
+A live map + recommender for finding open, quiet study spots across campus in real time.
 
-<br/>
+**[→ github.com/Prakhar11332/campus-study-spot-finder](https://github.com/Prakhar11332/campus-study-spot-finder)**
 
-## ⌁ stack
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=py,ts,js,react,nextjs,fastapi,postgres,mysql,docker,kubernetes,tailwind,vite,threejs,git,github,linux,bash,vscode&theme=dark" />
-
-</div>
-
-<br/>
-
-<table align="center">
-<tr>
-<th>Layer</th>
-<th>Tools</th>
-</tr>
-<tr>
-<td>Languages</td>
-<td>Python · TypeScript · JavaScript · SQL · JAVA · C · C++  </td>
-</tr>
-<tr>
-<td>ML / AI</td>
-<td>scikit-learn · SHAP · PyTorch (Deep Learning coursework) · RAG (chunking + hybrid BM25/embedding retrieval) · Voyage AI embeddings</td>
-</tr>
-<tr>
-<td>Agentic / LLM tooling</td>
-<td>Claude API (tool use, structured output, prompt caching, extended thinking) · MCP servers (tools/resources/prompts) · Ollama (local inference)</td>
-</tr>
-<tr>
-<td>Backend</td>
-<td>FastAPI · Next.js API routes · WebSockets · Prisma</td>
-</tr>
-<tr>
-<td>Data</td>
-<td>PostgreSQL · pgvector · MySQL/MariaDB · SQLite</td>
-</tr>
-<tr>
-<td>Infra</td>
-<td>Docker · Kubernetes · Render · GitHub Actions</td>
-</tr>
-<tr>
-<td>Frontend</td>
-<td>React · Next.js 14 · Tailwind CSS · Motion / GSAP · React Three Fiber</td>
+</td>
 </tr>
 </table>
 
@@ -144,30 +174,46 @@ No unexplained code makes it into a commit — every project I ship has document
 
 <br/>
 
-## ⌁ github stats
+## ⌁ activity
+
+```
+prakhar@dev:~$ git log --stat --since="1 year ago"
+```
 
 <div align="center">
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Prakhar11332&show_icons=true&theme=dark&hide_border=true&bg_color=00000000&title_color=FFFFFF&icon_color=888888&text_color=CCCCCC" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Prakhar11332&layout=compact&theme=dark&hide_border=true&bg_color=00000000&title_color=FFFFFF&text_color=CCCCCC" />
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=Prakhar11332&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=FF6B9D&icon_color=FFD166&text_color=CCCCCC" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Prakhar11332&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=FF6B9D&text_color=CCCCCC" />
 </div>
 
 <div align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Prakhar11332&theme=dark&hide_border=true&background=00000000&stroke=333333&ring=FFFFFF&fire=FFFFFF&currStreakLabel=FFFFFF" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Prakhar11332&theme=radical&hide_border=true&background=0d1117&stroke=FFD166&ring=FF6B9D&fire=FF6B9D&currStreakLabel=FFD166" />
 </div>
 
+<div align="center">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Prakhar11332&theme=react-dark&hide_border=true&bg_color=0d1117&color=FFD166&line=FF6B9D&point=FFFFFF" width="100%"/>
+</div>
+
+<sub>These fill in and get brighter automatically as you push more commits — no styling needed on your end, just consistent activity.</sub>
+
+<br/>
 <br/>
 
 ## ⌁ connect
 
 <div align="center">
 
-<a href="prakharg2412@gmail.com"><img src="https://img.shields.io/badge/Email-000000?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-<a href="https://www.linkedin.com/in/prakhar-goyal-0348a9323/"><img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="https://github.com/Prakhar11332"><img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" /></a>
+<a href="mailto:your-email@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="https://linkedin.com/in/your-linkedin"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="https://github.com/Prakhar11332"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
 
+</div>
 
+<div align="center">
+<sub>Semester 5 · targeting a 9.5 SGPA · targeting May 2027 for an AI/ML engineering internship</sub>
+</div>
+
+<br/>
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/Prakhar11332/Prakhar11332/main/assets/banner.svg" width="100%" alt="footer"/>
 </div>
-
