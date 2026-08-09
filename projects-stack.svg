@@ -1,0 +1,133 @@
+<svg width="1200" height="460" viewBox="0 0 1200 460" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBorder3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.25"/>
+    </linearGradient>
+
+    <style>
+      .card-title  { font-family: Georgia, 'Times New Roman', serif; font-size: 27px; fill: #ffffff; }
+      .card-tag    { font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 12px; letter-spacing: 1.5px; fill: #8a8a8a; }
+      .card-num    { font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 12px; letter-spacing: 1px; fill: #555555; }
+      .card-repo   { font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 11px; fill: #4a4a4a; }
+      .hint        { font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 11px; letter-spacing: 2px; fill: #4a4a4a; }
+
+      .cardSlot {
+        animation: slotCycle 18s linear infinite;
+        transform-origin: 160px 135px;
+      }
+      @keyframes slotCycle {
+        0%     { transform: translate(70px,0) rotate(7deg);  opacity: 0; }
+        2.5%   { transform: translate(0,0) rotate(0deg);     opacity: 1; }
+        14.2%  { transform: translate(0,0) rotate(0deg);     opacity: 1; }
+        16.66% { transform: translate(-70px,0) rotate(-7deg); opacity: 0; }
+        100%   { transform: translate(70px,0) rotate(7deg);  opacity: 0; }
+      }
+
+      .dot {
+        animation: dotCycle 18s linear infinite;
+      }
+      @keyframes dotCycle {
+        0%     { fill: #3a3a3a; }
+        2.5%   { fill: #ffffff; }
+        14.2%  { fill: #ffffff; }
+        16.66% { fill: #3a3a3a; }
+        100%   { fill: #3a3a3a; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="460" fill="#000000"/>
+
+  <!-- static ghost cards behind the stack, hinting depth -->
+  <g transform="translate(452,100) rotate(3 160 135)">
+    <rect width="320" height="270" rx="24" fill="#0a0a0a" stroke="#ffffff" stroke-opacity="0.06"/>
+  </g>
+  <g transform="translate(426,106) rotate(-3 160 135)">
+    <rect width="320" height="270" rx="24" fill="#0a0a0a" stroke="#ffffff" stroke-opacity="0.04"/>
+  </g>
+
+  <!-- the 6 cards, each cycling into the front slot in turn -->
+  <!-- 01 Runway -->
+  <g transform="translate(440,90)">
+    <g class="cardSlot" style="animation-delay:0s">
+      <rect width="320" height="270" rx="24" fill="#0d0d0d"/>
+      <rect width="320" height="270" rx="24" fill="none" stroke="url(#cardBorder3)" stroke-width="1.4"/>
+      <text x="284" y="40" text-anchor="end" class="card-num">01 / 06</text>
+      <text x="28" y="170" class="card-title">Runway</text>
+      <text x="28" y="198" class="card-tag">AI PRODUCTIVITY SYSTEM</text>
+      <text x="28" y="240" class="card-repo">github.com/Prakhar11332/runway</text>
+    </g>
+  </g>
+
+  <!-- 02 Autonomous DBaaS -->
+  <g transform="translate(440,90)">
+    <g class="cardSlot" style="animation-delay:-3s">
+      <rect width="320" height="270" rx="24" fill="#0d0d0d"/>
+      <rect width="320" height="270" rx="24" fill="none" stroke="url(#cardBorder3)" stroke-width="1.4"/>
+      <text x="284" y="40" text-anchor="end" class="card-num">02 / 06</text>
+      <text x="28" y="170" class="card-title">Autonomous DBaaS</text>
+      <text x="28" y="198" class="card-tag">SELF-SERVICE DATABASE PLATFORM</text>
+      <text x="28" y="240" class="card-repo">github.com/Prakhar11332/autonomous</text>
+    </g>
+  </g>
+
+  <!-- 03 CinegineAI -->
+  <g transform="translate(440,90)">
+    <g class="cardSlot" style="animation-delay:-6s">
+      <rect width="320" height="270" rx="24" fill="#0d0d0d"/>
+      <rect width="320" height="270" rx="24" fill="none" stroke="url(#cardBorder3)" stroke-width="1.4"/>
+      <text x="284" y="40" text-anchor="end" class="card-num">03 / 06</text>
+      <text x="28" y="170" class="card-title">CinegineAI</text>
+      <text x="28" y="198" class="card-tag">AI FILM / MEDIA ENGINE</text>
+      <text x="28" y="240" class="card-repo">github.com/Prakhar11332/cinegine-ai</text>
+    </g>
+  </g>
+
+  <!-- 04 Student Performance -->
+  <g transform="translate(440,90)">
+    <g class="cardSlot" style="animation-delay:-9s">
+      <rect width="320" height="270" rx="24" fill="#0d0d0d"/>
+      <rect width="320" height="270" rx="24" fill="none" stroke="url(#cardBorder3)" stroke-width="1.4"/>
+      <text x="284" y="40" text-anchor="end" class="card-num">04 / 06</text>
+      <text x="28" y="170" class="card-title">Student Performance</text>
+      <text x="28" y="198" class="card-tag">RANDOM FOREST + SHAP</text>
+      <text x="28" y="240" class="card-repo">github.com/Prakhar11332/student-performance</text>
+    </g>
+  </g>
+
+  <!-- 05 TriageAI -->
+  <g transform="translate(440,90)">
+    <g class="cardSlot" style="animation-delay:-12s">
+      <rect width="320" height="270" rx="24" fill="#0d0d0d"/>
+      <rect width="320" height="270" rx="24" fill="none" stroke="url(#cardBorder3)" stroke-width="1.4"/>
+      <text x="284" y="40" text-anchor="end" class="card-num">05 / 06</text>
+      <text x="28" y="170" class="card-title">TriageAI</text>
+      <text x="28" y="198" class="card-tag">OFFLINE TRIAGE ASSISTANT</text>
+      <text x="28" y="240" class="card-repo">github.com/Prakhar11332/triageai-1</text>
+    </g>
+  </g>
+
+  <!-- 06 Study Spot Finder -->
+  <g transform="translate(440,90)">
+    <g class="cardSlot" style="animation-delay:-15s">
+      <rect width="320" height="270" rx="24" fill="#0d0d0d"/>
+      <rect width="320" height="270" rx="24" fill="none" stroke="url(#cardBorder3)" stroke-width="1.4"/>
+      <text x="284" y="40" text-anchor="end" class="card-num">06 / 06</text>
+      <text x="28" y="170" class="card-title">Study Spot Finder</text>
+      <text x="28" y="198" class="card-tag">LIVE CAMPUS MAP</text>
+      <text x="28" y="240" class="card-repo">github.com/Prakhar11332/campus-study-spot-finder</text>
+    </g>
+  </g>
+
+  <!-- pagination dots, synced to the active card -->
+  <circle class="dot" style="animation-delay:0s"   cx="560" cy="404" r="4" fill="#3a3a3a"/>
+  <circle class="dot" style="animation-delay:-3s"  cx="576" cy="404" r="4" fill="#3a3a3a"/>
+  <circle class="dot" style="animation-delay:-6s"  cx="592" cy="404" r="4" fill="#3a3a3a"/>
+  <circle class="dot" style="animation-delay:-9s"  cx="608" cy="404" r="4" fill="#3a3a3a"/>
+  <circle class="dot" style="animation-delay:-12s" cx="624" cy="404" r="4" fill="#3a3a3a"/>
+  <circle class="dot" style="animation-delay:-15s" cx="640" cy="404" r="4" fill="#3a3a3a"/>
+
+  <text x="600" y="432" text-anchor="middle" class="hint">SIX PROJECTS · ONE STACK</text>
+</svg>
