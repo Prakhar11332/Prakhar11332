@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Prakhar11332/Prakhar11332/main/banner.svg" width="100%" alt="banner"/>
+<img src="https://raw.githubusercontent.com/Prakhar11332/Prakhar11332/main/assets/banner-motion.svg" width="100%" alt="banner"/>
 
 <br/>
 
@@ -106,6 +106,12 @@ prakhar@dev:~/stack$ cat frontend.txt
 prakhar@dev:~/projects$ ls --featured
 ```
 
+<div align="center">
+<img src="https://raw.githubusercontent.com/Prakhar11332/Prakhar11332/main/assets/projects-stack.svg" width="100%" alt="project card stack, auto-cycling through 6 projects"/>
+</div>
+
+<br/>
+
 <table>
 <tr>
 <td width="33%" valign="top">
@@ -121,7 +127,7 @@ AI-powered productivity system with an aviation metaphor — Next.js 14, Postgre
 ### 🗄️ Autonomous DBaaS
 Self-service Database-as-a-Service platform — multi-tenant PostgreSQL/MySQL/MariaDB provisioning on Docker/Kubernetes, driven by six control-plane engines, with a React dashboard.
 
-**[→ github.com/Prakhar11332/autonomous](https://github.com/Prakhar11332/Autonomous-Database-as-a-Service-Platform)**
+**[→ github.com/Prakhar11332/autonomous](https://github.com/Prakhar11332/autonomous)**
 
 </td>
 <td width="33%" valign="top">
@@ -129,7 +135,7 @@ Self-service Database-as-a-Service platform — multi-tenant PostgreSQL/MySQL/Ma
 ### 🎬 CinegineAI
 An AI-driven engine for the film/media pipeline — built to explore applied ML and generative workflows end to end.
 
-**[→ github.com/Prakhar11332/cinegine-ai](https://github.com/Prakhar11332/CineGen-AI)**
+**[→ github.com/Prakhar11332/cinegine-ai](https://github.com/Prakhar11332/cinegine-ai)**
 
 </td>
 </tr>
@@ -139,7 +145,7 @@ An AI-driven engine for the film/media pipeline — built to explore applied ML 
 ### 📊 Student Performance Intelligence
 UCI dataset-driven system predicting and explaining student outcomes — Random Forest + SHAP, PostgreSQL, FastAPI backend, Streamlit dashboard.
 
-**[→ github.com/Prakhar11332/student-performance](https://github.com/Prakhar11332/Student-Performance-Analytics-System)**
+**[→ github.com/Prakhar11332/student-performance](https://github.com/Prakhar11332/student-performance)**
 
 </td>
 <td width="33%" valign="top">
@@ -147,7 +153,7 @@ UCI dataset-driven system predicting and explaining student outcomes — Random 
 ### 🚑 TriageAI
 Offline-first mass-casualty triage assistant — local Gemma model via Ollama, FastAPI + WebSockets, React/Vite, SQLite, live Leaflet map. Runs entirely off a laptop-as-hotspot, no internet required.
 
-**[→ github.com/Prakhar11332/triageai-1](https://github.com/Prakhar11332/Triage-1)**
+**[→ github.com/Prakhar11332/triageai-1](https://github.com/Prakhar11332/triageai-1)**
 
 </td>
 <td width="33%" valign="top">
@@ -155,7 +161,7 @@ Offline-first mass-casualty triage assistant — local Gemma model via Ollama, F
 ### 📍 Campus Study Spot Finder
 A live map + recommender for finding open, quiet study spots across campus in real time.
 
-**[→ github.com/Prakhar11332/campus-study-spot-finder](https://github.com/Prakhar11332/CAMPUS-STUDY-SPOT-FINDER)**
+**[→ github.com/Prakhar11332/campus-study-spot-finder](https://github.com/Prakhar11332/campus-study-spot-finder)**
 
 </td>
 </tr>
@@ -208,8 +214,12 @@ prakhar@dev:~$ git log --stat --since="1 year ago"
 
 </div>
 
+<div align="center">
+<sub>Semester 5 · targeting a 9.5 SGPA · targeting May 2027 for an AI/ML engineering internship</sub>
+</div>
 
+<br/>
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/Prakhar11332/Prakhar11332/main/banner.svg" width="100%" alt="footer"/>
+<img src="https://raw.githubusercontent.com/Prakhar11332/Prakhar11332/main/assets/banner-motion.svg" width="100%" alt="footer"/>
 </div>
