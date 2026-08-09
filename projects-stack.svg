@@ -1,36 +1,76 @@
-<svg width="1200" height="460" viewBox="0 0 1200 460" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="1200" viewBox="0 0 1200 620" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="cardBorder3" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.05"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.25"/>
+    <clipPath id="clipSection">
+      <rect x="20" y="40" width="1160" height="460" rx="28"/>
+    </clipPath>
+    <clipPath id="clipCenter">
+      <rect width="500" height="460" rx="28"/>
+    </clipPath>
+    <clipPath id="clipSide">
+      <rect width="310" height="400" rx="22"/>
+    </clipPath>
+
+    <linearGradient id="borderCenter" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="borderSide" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.14"/>
     </linearGradient>
 
+    <linearGradient id="fadeLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fadeRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.75"/>
+    </linearGradient>
+
+    <!-- per-project accent glows -->
+    <radialGradient id="glow0" cx="80%" cy="10%" r="70%"><stop offset="0%" stop-color="#6E56CF" stop-opacity="0.35"/><stop offset="100%" stop-color="#6E56CF" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow1" cx="80%" cy="10%" r="70%"><stop offset="0%" stop-color="#22D3EE" stop-opacity="0.35"/><stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow2" cx="80%" cy="10%" r="70%"><stop offset="0%" stop-color="#F97362" stop-opacity="0.35"/><stop offset="100%" stop-color="#F97362" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow3" cx="80%" cy="10%" r="70%"><stop offset="0%" stop-color="#34D399" stop-opacity="0.35"/><stop offset="100%" stop-color="#34D399" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow4" cx="80%" cy="10%" r="70%"><stop offset="0%" stop-color="#F43F5E" stop-opacity="0.35"/><stop offset="100%" stop-color="#F43F5E" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow5" cx="80%" cy="10%" r="70%"><stop offset="0%" stop-color="#FBBF24" stop-opacity="0.35"/><stop offset="100%" stop-color="#FBBF24" stop-opacity="0"/></radialGradient>
+
     <style>
-      .card-title  { font-family: Georgia, 'Times New Roman', serif; font-size: 27px; fill: #ffffff; }
-      .card-tag    { font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 12px; letter-spacing: 1.5px; fill: #8a8a8a; }
-      .card-num    { font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 12px; letter-spacing: 1px; fill: #555555; }
-      .card-repo   { font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 11px; fill: #4a4a4a; }
-      .hint        { font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 11px; letter-spacing: 2px; fill: #4a4a4a; }
+      .num       { font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; letter-spacing: 1px; fill: #6a6a6a; }
+      .title-c   { font-family: Georgia, 'Times New Roman', serif; font-size: 32px; fill: #ffffff; }
+      .title-s   { font-family: Georgia, 'Times New Roman', serif; font-size: 21px; fill: #e7e7e7; }
+      .tag-c     { font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 12px; letter-spacing: 1.6px; fill: #9a9a9a; }
+      .tag-s     { font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 10px; letter-spacing: 1.4px; fill: #7a7a7a; }
+      .desc      { font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 14.5px; fill: #b8b8b8; }
+      .link-c    { font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 12px; letter-spacing: 1.4px; font-weight: bold; }
+      .link-s    { font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 11px; letter-spacing: 1.2px; font-weight: bold; }
+      .repo      { font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 10.5px; fill: #5c5c5c; }
+      .hint      { font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 11px; letter-spacing: 2px; fill: #4a4a4a; }
 
-      .cardSlot {
-        animation: slotCycle 18s linear infinite;
-        transform-origin: 160px 135px;
+      .slot { animation-duration: 18s; animation-iteration-count: infinite; animation-timing-function: ease-in-out; }
+      .slotCenter { animation-name: fadeScale; }
+      .slotSide   { animation-name: fadePlain; }
+      @keyframes fadeScale {
+        0%     { opacity: 0; transform: scale(0.96); }
+        3%     { opacity: 1; transform: scale(1); }
+        14.2%  { opacity: 1; transform: scale(1); }
+        16.66% { opacity: 0; transform: scale(0.97); }
+        100%   { opacity: 0; transform: scale(0.97); }
       }
-      @keyframes slotCycle {
-        0%     { transform: translate(70px,0) rotate(7deg);  opacity: 0; }
-        2.5%   { transform: translate(0,0) rotate(0deg);     opacity: 1; }
-        14.2%  { transform: translate(0,0) rotate(0deg);     opacity: 1; }
-        16.66% { transform: translate(-70px,0) rotate(-7deg); opacity: 0; }
-        100%   { transform: translate(70px,0) rotate(7deg);  opacity: 0; }
+      @keyframes fadePlain {
+        0%     { opacity: 0; }
+        3%     { opacity: 0.55; }
+        14.2%  { opacity: 0.55; }
+        16.66% { opacity: 0; }
+        100%   { opacity: 0; }
       }
-
-      .dot {
-        animation: dotCycle 18s linear infinite;
-      }
+      .dot { animation: dotCycle 18s ease-in-out infinite; }
       @keyframes dotCycle {
         0%     { fill: #3a3a3a; }
-        2.5%   { fill: #ffffff; }
+        3%     { fill: #ffffff; }
         14.2%  { fill: #ffffff; }
         16.66% { fill: #3a3a3a; }
         100%   { fill: #3a3a3a; }
@@ -38,96 +78,249 @@
     </style>
   </defs>
 
-  <rect width="1200" height="460" fill="#000000"/>
+  <!-- transparent canvas, no background rectangle -->
 
-  <!-- static ghost cards behind the stack, hinting depth -->
-  <g transform="translate(452,100) rotate(3 160 135)">
-    <rect width="320" height="270" rx="24" fill="#0a0a0a" stroke="#ffffff" stroke-opacity="0.06"/>
-  </g>
-  <g transform="translate(426,106) rotate(-3 160 135)">
-    <rect width="320" height="270" rx="24" fill="#0a0a0a" stroke="#ffffff" stroke-opacity="0.04"/>
-  </g>
+  <g clip-path="url(#clipSection)">
 
-  <!-- the 6 cards, each cycling into the front slot in turn -->
-  <!-- 01 Runway -->
-  <g transform="translate(440,90)">
-    <g class="cardSlot" style="animation-delay:0s">
-      <rect width="320" height="270" rx="24" fill="#0d0d0d"/>
-      <rect width="320" height="270" rx="24" fill="none" stroke="url(#cardBorder3)" stroke-width="1.4"/>
-      <text x="284" y="40" text-anchor="end" class="card-num">01 / 06</text>
-      <text x="28" y="170" class="card-title">Runway</text>
-      <text x="28" y="198" class="card-tag">AI PRODUCTIVITY SYSTEM</text>
-      <text x="28" y="240" class="card-repo">github.com/Prakhar11332/runway</text>
+    <!-- ================= CENTER (active) slot — one <g> per project, cross-fading ================= -->
+    <!-- 01 Runway -->
+    <g transform="translate(350,40)">
+      <g class="slot slotCenter" style="animation-delay:0s; transform-origin:250px 230px">
+        <rect width="500" height="460" rx="28" fill="#0b0b0b"/>
+        <rect width="500" height="460" rx="28" fill="url(#glow0)" clip-path="url(#clipCenter)"/>
+        <rect width="500" height="460" rx="28" fill="none" stroke="url(#borderCenter)" stroke-width="2"/>
+        <rect x="0" y="0" width="4" height="460" fill="#6E56CF" clip-path="url(#clipCenter)"/>
+        <text x="460" y="52" text-anchor="end" font-size="13" class="num">01 / 06</text>
+        <text x="36" y="200" class="title-c">Runway</text>
+        <text x="36" y="228" class="tag-c">NEXT.JS · POSTGRES · PGVECTOR</text>
+        <line x1="36" y1="252" x2="464" y2="252" stroke="#ffffff" stroke-opacity="0.12"/>
+        <text x="36" y="286" class="desc">AI-native productivity system with an</text>
+        <text x="36" y="308" class="desc">aviation metaphor and MCP autopilot.</text>
+        <text x="36" y="404" class="link-c" fill="#a996ff">VIEW PROJECT →</text>
+        <text x="36" y="424" class="repo">github.com/Prakhar11332/runway</text>
+      </g>
     </g>
-  </g>
 
-  <!-- 02 Autonomous DBaaS -->
-  <g transform="translate(440,90)">
-    <g class="cardSlot" style="animation-delay:-3s">
-      <rect width="320" height="270" rx="24" fill="#0d0d0d"/>
-      <rect width="320" height="270" rx="24" fill="none" stroke="url(#cardBorder3)" stroke-width="1.4"/>
-      <text x="284" y="40" text-anchor="end" class="card-num">02 / 06</text>
-      <text x="28" y="170" class="card-title">Autonomous DBaaS</text>
-      <text x="28" y="198" class="card-tag">SELF-SERVICE DATABASE PLATFORM</text>
-      <text x="28" y="240" class="card-repo">github.com/Prakhar11332/autonomous</text>
+    <!-- 02 Autonomous DBaaS -->
+    <g transform="translate(350,40)">
+      <g class="slot slotCenter" style="animation-delay:-3s; transform-origin:250px 230px">
+        <rect width="500" height="460" rx="28" fill="#0b0b0b"/>
+        <rect width="500" height="460" rx="28" fill="url(#glow1)" clip-path="url(#clipCenter)"/>
+        <rect width="500" height="460" rx="28" fill="none" stroke="url(#borderCenter)" stroke-width="2"/>
+        <rect x="0" y="0" width="4" height="460" fill="#22D3EE" clip-path="url(#clipCenter)"/>
+        <text x="460" y="52" text-anchor="end" font-size="13" class="num">02 / 06</text>
+        <text x="36" y="200" class="title-c">Autonomous DBaaS</text>
+        <text x="36" y="228" class="tag-c">DOCKER · KUBERNETES · REACT</text>
+        <line x1="36" y1="252" x2="464" y2="252" stroke="#ffffff" stroke-opacity="0.12"/>
+        <text x="36" y="286" class="desc">Self-service DBaaS provisioning</text>
+        <text x="36" y="308" class="desc">Postgres, MySQL &amp; MariaDB at scale.</text>
+        <text x="36" y="404" class="link-c" fill="#7fe3f4">VIEW PROJECT →</text>
+        <text x="36" y="424" class="repo">github.com/Prakhar11332/autonomous</text>
+      </g>
     </g>
-  </g>
 
-  <!-- 03 CinegineAI -->
-  <g transform="translate(440,90)">
-    <g class="cardSlot" style="animation-delay:-6s">
-      <rect width="320" height="270" rx="24" fill="#0d0d0d"/>
-      <rect width="320" height="270" rx="24" fill="none" stroke="url(#cardBorder3)" stroke-width="1.4"/>
-      <text x="284" y="40" text-anchor="end" class="card-num">03 / 06</text>
-      <text x="28" y="170" class="card-title">CinegineAI</text>
-      <text x="28" y="198" class="card-tag">AI FILM / MEDIA ENGINE</text>
-      <text x="28" y="240" class="card-repo">github.com/Prakhar11332/cinegine-ai</text>
+    <!-- 03 CinegineAI -->
+    <g transform="translate(350,40)">
+      <g class="slot slotCenter" style="animation-delay:-6s; transform-origin:250px 230px">
+        <rect width="500" height="460" rx="28" fill="#0b0b0b"/>
+        <rect width="500" height="460" rx="28" fill="url(#glow2)" clip-path="url(#clipCenter)"/>
+        <rect width="500" height="460" rx="28" fill="none" stroke="url(#borderCenter)" stroke-width="2"/>
+        <rect x="0" y="0" width="4" height="460" fill="#F97362" clip-path="url(#clipCenter)"/>
+        <text x="460" y="52" text-anchor="end" font-size="13" class="num">03 / 06</text>
+        <text x="36" y="200" class="title-c">CinegineAI</text>
+        <text x="36" y="228" class="tag-c">APPLIED ML · GENERATIVE AI</text>
+        <line x1="36" y1="252" x2="464" y2="252" stroke="#ffffff" stroke-opacity="0.12"/>
+        <text x="36" y="286" class="desc">An AI-driven engine exploring the</text>
+        <text x="36" y="308" class="desc">film &amp; media production pipeline.</text>
+        <text x="36" y="404" class="link-c" fill="#ffab9c">VIEW PROJECT →</text>
+        <text x="36" y="424" class="repo">github.com/Prakhar11332/cinegine-ai</text>
+      </g>
     </g>
-  </g>
 
-  <!-- 04 Student Performance -->
-  <g transform="translate(440,90)">
-    <g class="cardSlot" style="animation-delay:-9s">
-      <rect width="320" height="270" rx="24" fill="#0d0d0d"/>
-      <rect width="320" height="270" rx="24" fill="none" stroke="url(#cardBorder3)" stroke-width="1.4"/>
-      <text x="284" y="40" text-anchor="end" class="card-num">04 / 06</text>
-      <text x="28" y="170" class="card-title">Student Performance</text>
-      <text x="28" y="198" class="card-tag">RANDOM FOREST + SHAP</text>
-      <text x="28" y="240" class="card-repo">github.com/Prakhar11332/student-performance</text>
+    <!-- 04 Student Performance -->
+    <g transform="translate(350,40)">
+      <g class="slot slotCenter" style="animation-delay:-9s; transform-origin:250px 230px">
+        <rect width="500" height="460" rx="28" fill="#0b0b0b"/>
+        <rect width="500" height="460" rx="28" fill="url(#glow3)" clip-path="url(#clipCenter)"/>
+        <rect width="500" height="460" rx="28" fill="none" stroke="url(#borderCenter)" stroke-width="2"/>
+        <rect x="0" y="0" width="4" height="460" fill="#34D399" clip-path="url(#clipCenter)"/>
+        <text x="460" y="52" text-anchor="end" font-size="13" class="num">04 / 06</text>
+        <text x="36" y="200" class="title-c">Student Performance</text>
+        <text x="36" y="228" class="tag-c">RANDOM FOREST · SHAP · FASTAPI</text>
+        <line x1="36" y1="252" x2="464" y2="252" stroke="#ffffff" stroke-opacity="0.12"/>
+        <text x="36" y="286" class="desc">Predicts and explains student</text>
+        <text x="36" y="308" class="desc">outcomes on the UCI dataset.</text>
+        <text x="36" y="404" class="link-c" fill="#8bf0c7">VIEW PROJECT →</text>
+        <text x="36" y="424" class="repo">github.com/Prakhar11332/student-performance</text>
+      </g>
     </g>
-  </g>
 
-  <!-- 05 TriageAI -->
-  <g transform="translate(440,90)">
-    <g class="cardSlot" style="animation-delay:-12s">
-      <rect width="320" height="270" rx="24" fill="#0d0d0d"/>
-      <rect width="320" height="270" rx="24" fill="none" stroke="url(#cardBorder3)" stroke-width="1.4"/>
-      <text x="284" y="40" text-anchor="end" class="card-num">05 / 06</text>
-      <text x="28" y="170" class="card-title">TriageAI</text>
-      <text x="28" y="198" class="card-tag">OFFLINE TRIAGE ASSISTANT</text>
-      <text x="28" y="240" class="card-repo">github.com/Prakhar11332/triageai-1</text>
+    <!-- 05 TriageAI -->
+    <g transform="translate(350,40)">
+      <g class="slot slotCenter" style="animation-delay:-12s; transform-origin:250px 230px">
+        <rect width="500" height="460" rx="28" fill="#0b0b0b"/>
+        <rect width="500" height="460" rx="28" fill="url(#glow4)" clip-path="url(#clipCenter)"/>
+        <rect width="500" height="460" rx="28" fill="none" stroke="url(#borderCenter)" stroke-width="2"/>
+        <rect x="0" y="0" width="4" height="460" fill="#F43F5E" clip-path="url(#clipCenter)"/>
+        <text x="460" y="52" text-anchor="end" font-size="13" class="num">05 / 06</text>
+        <text x="36" y="200" class="title-c">TriageAI</text>
+        <text x="36" y="228" class="tag-c">OLLAMA · FASTAPI · OFFLINE-FIRST</text>
+        <line x1="36" y1="252" x2="464" y2="252" stroke="#ffffff" stroke-opacity="0.12"/>
+        <text x="36" y="286" class="desc">Mass-casualty triage assistant that</text>
+        <text x="36" y="308" class="desc">runs entirely off a laptop hotspot.</text>
+        <text x="36" y="404" class="link-c" fill="#ff9fb0">VIEW PROJECT →</text>
+        <text x="36" y="424" class="repo">github.com/Prakhar11332/triageai-1</text>
+      </g>
     </g>
-  </g>
 
-  <!-- 06 Study Spot Finder -->
-  <g transform="translate(440,90)">
-    <g class="cardSlot" style="animation-delay:-15s">
-      <rect width="320" height="270" rx="24" fill="#0d0d0d"/>
-      <rect width="320" height="270" rx="24" fill="none" stroke="url(#cardBorder3)" stroke-width="1.4"/>
-      <text x="284" y="40" text-anchor="end" class="card-num">06 / 06</text>
-      <text x="28" y="170" class="card-title">Study Spot Finder</text>
-      <text x="28" y="198" class="card-tag">LIVE CAMPUS MAP</text>
-      <text x="28" y="240" class="card-repo">github.com/Prakhar11332/campus-study-spot-finder</text>
+    <!-- 06 Study Spot Finder -->
+    <g transform="translate(350,40)">
+      <g class="slot slotCenter" style="animation-delay:-15s; transform-origin:250px 230px">
+        <rect width="500" height="460" rx="28" fill="#0b0b0b"/>
+        <rect width="500" height="460" rx="28" fill="url(#glow5)" clip-path="url(#clipCenter)"/>
+        <rect width="500" height="460" rx="28" fill="none" stroke="url(#borderCenter)" stroke-width="2"/>
+        <rect x="0" y="0" width="4" height="460" fill="#FBBF24" clip-path="url(#clipCenter)"/>
+        <text x="460" y="52" text-anchor="end" font-size="13" class="num">06 / 06</text>
+        <text x="36" y="200" class="title-c">Study Spot Finder</text>
+        <text x="36" y="228" class="tag-c">LIVE MAP · RECOMMENDER</text>
+        <line x1="36" y1="252" x2="464" y2="252" stroke="#ffffff" stroke-opacity="0.12"/>
+        <text x="36" y="286" class="desc">Finds open, quiet study spots</text>
+        <text x="36" y="308" class="desc">across campus in real time.</text>
+        <text x="36" y="404" class="link-c" fill="#ffdf8a">VIEW PROJECT →</text>
+        <text x="36" y="424" class="repo">github.com/Prakhar11332/campus-study-spot-finder</text>
+      </g>
     </g>
+
+    <!-- ================= LEFT (previous) slot — shows project (k-1) ================= -->
+    <!-- shown during window k: content = project (k-1+6)%6 -->
+    <g transform="translate(20,70)">
+      <g class="slot slotSide" style="animation-delay:0s">   <!-- window k=0 -> shows #6 Study Spot Finder -->
+        <rect width="310" height="400" rx="22" fill="#0b0b0b"/>
+        <rect width="310" height="400" rx="22" fill="url(#glow5)" clip-path="url(#clipSide)"/>
+        <rect width="310" height="400" rx="22" fill="none" stroke="url(#borderSide)" stroke-width="1.2"/>
+        <text x="278" y="42" text-anchor="end" font-size="11" class="num">06 / 06</text>
+        <text x="26" y="150" class="title-s">Study Spot Finder</text>
+        <text x="26" y="174" class="tag-s">LIVE MAP · RECOMMENDER</text>
+        <text x="26" y="356" class="link-s" fill="#ffdf8a">VIEW PROJECT →</text>
+      </g>
+      <g class="slot slotSide" style="animation-delay:-3s">   <!-- window k=1 -> shows #1 Runway -->
+        <rect width="310" height="400" rx="22" fill="#0b0b0b"/>
+        <rect width="310" height="400" rx="22" fill="url(#glow0)" clip-path="url(#clipSide)"/>
+        <rect width="310" height="400" rx="22" fill="none" stroke="url(#borderSide)" stroke-width="1.2"/>
+        <text x="278" y="42" text-anchor="end" font-size="11" class="num">01 / 06</text>
+        <text x="26" y="150" class="title-s">Runway</text>
+        <text x="26" y="174" class="tag-s">NEXT.JS · PGVECTOR</text>
+        <text x="26" y="356" class="link-s" fill="#a996ff">VIEW PROJECT →</text>
+      </g>
+      <g class="slot slotSide" style="animation-delay:-6s">   <!-- window k=2 -> shows #2 Autonomous DBaaS -->
+        <rect width="310" height="400" rx="22" fill="#0b0b0b"/>
+        <rect width="310" height="400" rx="22" fill="url(#glow1)" clip-path="url(#clipSide)"/>
+        <rect width="310" height="400" rx="22" fill="none" stroke="url(#borderSide)" stroke-width="1.2"/>
+        <text x="278" y="42" text-anchor="end" font-size="11" class="num">02 / 06</text>
+        <text x="26" y="150" class="title-s">Autonomous DBaaS</text>
+        <text x="26" y="174" class="tag-s">DOCKER · KUBERNETES</text>
+        <text x="26" y="356" class="link-s" fill="#7fe3f4">VIEW PROJECT →</text>
+      </g>
+      <g class="slot slotSide" style="animation-delay:-9s">   <!-- window k=3 -> shows #3 CinegineAI -->
+        <rect width="310" height="400" rx="22" fill="#0b0b0b"/>
+        <rect width="310" height="400" rx="22" fill="url(#glow2)" clip-path="url(#clipSide)"/>
+        <rect width="310" height="400" rx="22" fill="none" stroke="url(#borderSide)" stroke-width="1.2"/>
+        <text x="278" y="42" text-anchor="end" font-size="11" class="num">03 / 06</text>
+        <text x="26" y="150" class="title-s">CinegineAI</text>
+        <text x="26" y="174" class="tag-s">APPLIED ML</text>
+        <text x="26" y="356" class="link-s" fill="#ffab9c">VIEW PROJECT →</text>
+      </g>
+      <g class="slot slotSide" style="animation-delay:-12s">  <!-- window k=4 -> shows #4 Student Performance -->
+        <rect width="310" height="400" rx="22" fill="#0b0b0b"/>
+        <rect width="310" height="400" rx="22" fill="url(#glow3)" clip-path="url(#clipSide)"/>
+        <rect width="310" height="400" rx="22" fill="none" stroke="url(#borderSide)" stroke-width="1.2"/>
+        <text x="278" y="42" text-anchor="end" font-size="11" class="num">04 / 06</text>
+        <text x="26" y="150" class="title-s">Student Performance</text>
+        <text x="26" y="174" class="tag-s">RANDOM FOREST · SHAP</text>
+        <text x="26" y="356" class="link-s" fill="#8bf0c7">VIEW PROJECT →</text>
+      </g>
+      <g class="slot slotSide" style="animation-delay:-15s">  <!-- window k=5 -> shows #5 TriageAI -->
+        <rect width="310" height="400" rx="22" fill="#0b0b0b"/>
+        <rect width="310" height="400" rx="22" fill="url(#glow4)" clip-path="url(#clipSide)"/>
+        <rect width="310" height="400" rx="22" fill="none" stroke="url(#borderSide)" stroke-width="1.2"/>
+        <text x="278" y="42" text-anchor="end" font-size="11" class="num">05 / 06</text>
+        <text x="26" y="150" class="title-s">TriageAI</text>
+        <text x="26" y="174" class="tag-s">OFFLINE-FIRST</text>
+        <text x="26" y="356" class="link-s" fill="#ff9fb0">VIEW PROJECT →</text>
+      </g>
+    </g>
+
+    <!-- ================= RIGHT (next) slot — shows project (k+1) ================= -->
+    <g transform="translate(870,70)">
+      <g class="slot slotSide" style="animation-delay:0s">   <!-- window k=0 -> shows #2 Autonomous DBaaS -->
+        <rect width="310" height="400" rx="22" fill="#0b0b0b"/>
+        <rect width="310" height="400" rx="22" fill="url(#glow1)" clip-path="url(#clipSide)"/>
+        <rect width="310" height="400" rx="22" fill="none" stroke="url(#borderSide)" stroke-width="1.2"/>
+        <text x="278" y="42" text-anchor="end" font-size="11" class="num">02 / 06</text>
+        <text x="26" y="150" class="title-s">Autonomous DBaaS</text>
+        <text x="26" y="174" class="tag-s">DOCKER · KUBERNETES</text>
+        <text x="26" y="356" class="link-s" fill="#7fe3f4">VIEW PROJECT →</text>
+      </g>
+      <g class="slot slotSide" style="animation-delay:-3s">   <!-- window k=1 -> shows #3 CinegineAI -->
+        <rect width="310" height="400" rx="22" fill="#0b0b0b"/>
+        <rect width="310" height="400" rx="22" fill="url(#glow2)" clip-path="url(#clipSide)"/>
+        <rect width="310" height="400" rx="22" fill="none" stroke="url(#borderSide)" stroke-width="1.2"/>
+        <text x="278" y="42" text-anchor="end" font-size="11" class="num">03 / 06</text>
+        <text x="26" y="150" class="title-s">CinegineAI</text>
+        <text x="26" y="174" class="tag-s">APPLIED ML</text>
+        <text x="26" y="356" class="link-s" fill="#ffab9c">VIEW PROJECT →</text>
+      </g>
+      <g class="slot slotSide" style="animation-delay:-6s">   <!-- window k=2 -> shows #4 Student Performance -->
+        <rect width="310" height="400" rx="22" fill="#0b0b0b"/>
+        <rect width="310" height="400" rx="22" fill="url(#glow3)" clip-path="url(#clipSide)"/>
+        <rect width="310" height="400" rx="22" fill="none" stroke="url(#borderSide)" stroke-width="1.2"/>
+        <text x="278" y="42" text-anchor="end" font-size="11" class="num">04 / 06</text>
+        <text x="26" y="150" class="title-s">Student Performance</text>
+        <text x="26" y="174" class="tag-s">RANDOM FOREST · SHAP</text>
+        <text x="26" y="356" class="link-s" fill="#8bf0c7">VIEW PROJECT →</text>
+      </g>
+      <g class="slot slotSide" style="animation-delay:-9s">   <!-- window k=3 -> shows #5 TriageAI -->
+        <rect width="310" height="400" rx="22" fill="#0b0b0b"/>
+        <rect width="310" height="400" rx="22" fill="url(#glow4)" clip-path="url(#clipSide)"/>
+        <rect width="310" height="400" rx="22" fill="none" stroke="url(#borderSide)" stroke-width="1.2"/>
+        <text x="278" y="42" text-anchor="end" font-size="11" class="num">05 / 06</text>
+        <text x="26" y="150" class="title-s">TriageAI</text>
+        <text x="26" y="174" class="tag-s">OFFLINE-FIRST</text>
+        <text x="26" y="356" class="link-s" fill="#ff9fb0">VIEW PROJECT →</text>
+      </g>
+      <g class="slot slotSide" style="animation-delay:-12s">  <!-- window k=4 -> shows #6 Study Spot Finder -->
+        <rect width="310" height="400" rx="22" fill="#0b0b0b"/>
+        <rect width="310" height="400" rx="22" fill="url(#glow5)" clip-path="url(#clipSide)"/>
+        <rect width="310" height="400" rx="22" fill="none" stroke="url(#borderSide)" stroke-width="1.2"/>
+        <text x="278" y="42" text-anchor="end" font-size="11" class="num">06 / 06</text>
+        <text x="26" y="150" class="title-s">Study Spot Finder</text>
+        <text x="26" y="174" class="tag-s">LIVE MAP</text>
+        <text x="26" y="356" class="link-s" fill="#ffdf8a">VIEW PROJECT →</text>
+      </g>
+      <g class="slot slotSide" style="animation-delay:-15s">  <!-- window k=5 -> shows #1 Runway -->
+        <rect width="310" height="400" rx="22" fill="#0b0b0b"/>
+        <rect width="310" height="400" rx="22" fill="url(#glow0)" clip-path="url(#clipSide)"/>
+        <rect width="310" height="400" rx="22" fill="none" stroke="url(#borderSide)" stroke-width="1.2"/>
+        <text x="278" y="42" text-anchor="end" font-size="11" class="num">01 / 06</text>
+        <text x="26" y="150" class="title-s">Runway</text>
+        <text x="26" y="174" class="tag-s">NEXT.JS · PGVECTOR</text>
+        <text x="26" y="356" class="link-s" fill="#a996ff">VIEW PROJECT →</text>
+      </g>
+    </g>
+
+    <!-- edge fades to keep focus on the center card -->
+    <rect x="20" y="40" width="150" height="460" fill="url(#fadeLeft)"/>
+    <rect x="1030" y="40" width="150" height="460" fill="url(#fadeRight)"/>
+
   </g>
 
-  <!-- pagination dots, synced to the active card -->
-  <circle class="dot" style="animation-delay:0s"   cx="560" cy="404" r="4" fill="#3a3a3a"/>
-  <circle class="dot" style="animation-delay:-3s"  cx="576" cy="404" r="4" fill="#3a3a3a"/>
-  <circle class="dot" style="animation-delay:-6s"  cx="592" cy="404" r="4" fill="#3a3a3a"/>
-  <circle class="dot" style="animation-delay:-9s"  cx="608" cy="404" r="4" fill="#3a3a3a"/>
-  <circle class="dot" style="animation-delay:-12s" cx="624" cy="404" r="4" fill="#3a3a3a"/>
-  <circle class="dot" style="animation-delay:-15s" cx="640" cy="404" r="4" fill="#3a3a3a"/>
+  <!-- pagination dots + count, directly beneath the cards -->
+  <circle class="dot" style="animation-delay:0s"   cx="560" cy="540" r="4.5"/>
+  <circle class="dot" style="animation-delay:-3s"  cx="578" cy="540" r="4.5"/>
+  <circle class="dot" style="animation-delay:-6s"  cx="596" cy="540" r="4.5"/>
+  <circle class="dot" style="animation-delay:-9s"  cx="614" cy="540" r="4.5"/>
+  <circle class="dot" style="animation-delay:-12s" cx="632" cy="540" r="4.5"/>
+  <circle class="dot" style="animation-delay:-15s" cx="650" cy="540" r="4.5"/>
 
-  <text x="600" y="432" text-anchor="middle" class="hint">SIX PROJECTS · ONE STACK</text>
+  <text x="600" y="574" text-anchor="middle" class="hint">SIX PROJECTS · ONE STACK</text>
 </svg>
