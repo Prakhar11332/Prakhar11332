@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Prakhar11332/Prakhar11332/main/assets/banner-motion.svg" width="100%" alt="banner"/>
+<img src="https://raw.githubusercontent.com/Prakhar11332/Prakhar11332/main/banner-motion.svg" width="100%" alt="banner"/>
 
 <br/>
 
@@ -107,7 +107,7 @@ prakhar@dev:~/projects$ ls --featured
 ```
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/Prakhar11332/Prakhar11332/main/assets/projects-stack.svg" width="100%" alt="project card stack, auto-cycling through 6 projects"/>
+<img src="https://raw.githubusercontent.com/Prakhar11332/Prakhar11332/main/projects-stack.svg" width="100%" alt="project card stack, auto-cycling through 6 projects"/>
 </div>
 
 <br/>
@@ -221,5 +221,5 @@ prakhar@dev:~$ git log --stat --since="1 year ago"
 <br/>
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/Prakhar11332/Prakhar11332/main/assets/banner-motion.svg" width="100%" alt="footer"/>
+<img src="https://raw.githubusercontent.com/Prakhar11332/Prakhar11332/main/banner-motion.svg" width="100%" alt="footer"/>
 </div>
