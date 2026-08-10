@@ -98,7 +98,7 @@ Everything below is stuff I've actually shipped with, not a badge wishlist.
 ###  Runway
 AI-powered productivity system built around an aviation metaphor. Next.js 14 + PostgreSQL/Prisma, RAG over your own task history via pgvector + Voyage embeddings, mood-aware prioritization, and an MCP-based "autopilot" loop that plans your day for you.
 
-**[→ runway](https://github.com/Prakhar11332/runway)**
+**[→ runway](https://github.com/Prakhar11332/RUNWAY)**
 
 </td>
 <td width="33%" valign="top">
@@ -106,7 +106,7 @@ AI-powered productivity system built around an aviation metaphor. Next.js 14 + P
 ### Autonomous DBaaS
 Self-service Database-as-a-Service platform. Multi-tenant PostgreSQL/MySQL/MariaDB provisioning on Docker/Kubernetes, driven by six independent control-plane engines, with a React dashboard on top.
 
-**[→ autonomous](https://github.com/Prakhar11332/autonomous)**
+**[→ autonomous](https://github.com/Prakhar11332/Autonomous-Database-as-a-Service-Platform)**
 
 </td>
 <td width="33%" valign="top">
@@ -124,7 +124,7 @@ Offline-first mass-casualty triage assistant for disaster response. Runs a local
 ###  Student Performance Intelligence
 UCI dataset-driven system that predicts *and explains* student outcomes. Random Forest + SHAP for interpretability, PostgreSQL, FastAPI backend, Streamlit dashboard.
 
-**[→ student-performance](https://github.com/Prakhar11332/student-performance)**
+**[→ student-performance](https://github.com/Prakhar11332/Student-Performance-Analytics-System)**
 
 </td>
 <td width="33%" valign="top">
@@ -132,7 +132,7 @@ UCI dataset-driven system that predicts *and explains* student outcomes. Random 
 ###  CinegineAI
 An AI-driven engine for the film/media pipeline, built to explore generative and applied-ML workflows end to end.
 
-**[→ cinegine-ai](https://github.com/Prakhar11332/cinegine-ai)**
+**[→ cinegine-ai](https://github.com/Prakhar11332/CineGen-AI)**
 
 </td>
 <td width="33%" valign="top">
@@ -140,7 +140,7 @@ An AI-driven engine for the film/media pipeline, built to explore generative and
 ###  Campus Study Spot Finder
 A live map + recommender for finding open, quiet study spots across campus in real time.
 
-**[→ campus-study-spot-finder](https://github.com/Prakhar11332/campus-study-spot-finder)**
+**[→ campus-study-spot-finder](https://github.com/Prakhar11332/CAMPUS-STUDY-SPOT-FINDER)**
 
 </td>
 </tr>
